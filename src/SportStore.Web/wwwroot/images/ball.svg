@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 480 360">
+  <defs><radialGradient id="ball" cx="35%" cy="25%" r="80%"><stop stop-color="#fffef9"/><stop offset=".65" stop-color="#e7e8dd"/><stop offset="1" stop-color="#c2c9bc"/></radialGradient><clipPath id="ballClip"><circle cx="240" cy="176" r="115"/></clipPath></defs>
+  <ellipse cx="244" cy="302" rx="101" ry="10" fill="#23372d20"/>
+  <circle cx="240" cy="176" r="115" fill="url(#ball)"/>
+  <g clip-path="url(#ballClip)" stroke="#485b4f" stroke-width="1.5" stroke-linejoin="round">
+    <path d="m214 139 52-1 21 48-42 32-45-30z" fill="#253d33"/>
+    <path d="m200 188-43 13-29-33 9-42 41-5 36 18m52-1 25-36 43 12 17 40-22 32h-42m-42 32 14 44-32 31-43-16-9-36 25-53" fill="none"/>
+    <path d="m158 202 18 39 9 0m115-140-24-33m57 46 32-11m-36 83 18 29-17 40-43 9-28-2m-4 32 12 26" fill="none"/>
+    <path d="m137 126-25-26 22-35 48-8 16 31-20 33zM291 102l-16-34 37-12 45 37-23 21zM329 186l36-7 15 39-24 32-26 5 17-40zM176 241l-38 9-2 48 47 23 12-43-10-37z" fill="#253d33"/>
+    <path d="m200 130 12 5-33-36-8 6zm77 83 8-11 27 34-8 9zm-32 57 8-6 11 37-12 4z" fill="#e96936" stroke="none"/>
+  </g>
+  <circle cx="240" cy="176" r="114.5" fill="none" stroke="#a8b5a6" stroke-width="1"/>
+  <path d="M162 129c12-25 33-42 61-47" fill="none" stroke="#fff" stroke-width="4" opacity=".6" stroke-linecap="round"/>
+</svg>

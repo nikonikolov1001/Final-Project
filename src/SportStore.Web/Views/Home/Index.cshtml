@@ -1,0 +1,49 @@
+@model HomeViewModel
+@{
+    ViewData["Title"] = "Начало";
+}
+
+<section class="hero p-4 p-md-5 mb-5">
+    <div class="row align-items-center g-4">
+        <div class="col-md-7">
+            <p class="text-uppercase small fw-semibold text-secondary">Спортни стоки</p>
+            <h1 class="display-5 fw-bold mb-3">Екипировка за твоето движение.</h1>
+            <p class="text-secondary mb-4">
+                Разгледай спортни обувки, облекло и екипировка.
+                Виж наличните размери и цветове на всеки продукт.
+            </p>
+            <a class="btn btn-dark px-4 py-2" asp-controller="Catalog" asp-action="Index">
+                Разгледай каталога
+            </a>
+        </div>
+        <div class="col-md-5">
+            <img class="hero-image" src="~/images/shoes.svg" alt="Илюстрация на спортна обувка" />
+        </div>
+    </div>
+</section>
+
+<section aria-labelledby="featured-title">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-4">
+        <div>
+            <h2 id="featured-title" class="h3 mb-1">Избрани продукти</h2>
+            <p class="text-secondary small mb-0">@Model.ProductCount продукта в каталога</p>
+        </div>
+        <a asp-controller="Catalog" asp-action="Index">Всички продукти →</a>
+    </div>
+
+    @if (Model.FeaturedProducts.Count > 0)
+    {
+        <div class="row g-4">
+            @foreach (var product in Model.FeaturedProducts)
+            {
+                <div class="col-sm-6 col-lg-4">
+                    <partial name="_ProductCard" model="product" />
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p class="alert alert-light border">Все още няма добавени продукти.</p>
+    }
+</section>

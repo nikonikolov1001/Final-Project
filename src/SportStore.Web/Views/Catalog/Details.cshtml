@@ -1,0 +1,50 @@
+@model ProductDetailsViewModel
+@{
+    ViewData["Title"] = Model.Name;
+    var totalStock = Model.Variants.Sum(variant => variant.Stock);
+}
+
+<a class="d-inline-block mb-4" asp-controller="Catalog" asp-action="Index">← Към каталога</a>
+
+<section class="row g-4 g-md-5" aria-labelledby="product-title">
+    <div class="col-md-6">
+        <img class="details-image rounded" src="@Model.ImagePath" alt="@Model.Name" />
+    </div>
+    <div class="col-md-6">
+        <p class="small text-secondary mb-2">@Model.Brand · @Model.Category · @Model.Sport</p>
+        <h1 id="product-title" class="h2 mb-3">@Model.Name</h1>
+        <p class="h4 mb-3">@Model.Price.ToString("0.00") €</p>
+        <p class="text-secondary mb-4">@Model.Description</p>
+
+        <h2 class="h5 mb-3">Варианти и наличности</h2>
+        @if (Model.Variants.Count > 0)
+        {
+            <div class="table-responsive">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col">Размер</th>
+                            <th scope="col">Цвят</th>
+                            <th scope="col">Наличност</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var variant in Model.Variants)
+                        {
+                            <tr>
+                                <td>@variant.Size</td>
+                                <td>@variant.Color</td>
+                                <td>@(variant.Stock > 0 ? $"{variant.Stock} бр." : "Изчерпано")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <p class="small text-secondary">Обща наличност: @totalStock бр.</p>
+        }
+        else
+        {
+            <p class="text-secondary">Все още няма добавени варианти.</p>
+        }
+    </div>
+</section>

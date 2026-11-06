@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 480 360">
+  <defs><linearGradient id="bag" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#405461"/><stop offset="1" stop-color="#1a2f3b"/></linearGradient><linearGradient id="bagPocket" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#364e5b"/><stop offset="1" stop-color="#223844"/></linearGradient></defs>
+  <ellipse cx="244" cy="313" rx="89" ry="12" fill="#23372d20"/>
+  <g transform="rotate(7 240 180)">
+    <path d="M180 77c-22 12-36 68-30 147l17 33 18-19-9-142m119-19c24 12 38 68 32 147l-17 33-18-19 9-142" fill="none" stroke="#314651" stroke-width="13"/>
+    <path d="M212 69V50c0-13 55-13 55 0v19" fill="none" stroke="#243b46" stroke-width="9"/>
+    <path d="M174 117c2-39 31-58 67-58s68 21 69 58l11 161c-1 24-156 24-157 0z" fill="url(#bag)"/>
+    <path d="M183 128c-4-70 111-71 118 0" fill="none" stroke="#7f9198" stroke-width="2"/>
+    <path d="M184 128c-3-61 107-62 114 0" fill="none" stroke="#e76b39" stroke-width="3"/>
+    <path d="m294 126 3 16" fill="none" stroke="#e76b39" stroke-width="5" stroke-linecap="round"/>
+    <path d="M181 211c2-22 116-22 119 0l5 61c0 18-128 18-128 0z" fill="url(#bagPocket)" stroke="#152b36" stroke-width="1"/>
+    <path d="M183 216c28-11 87-11 115 0" fill="none" stroke="#9aa9aa" stroke-width="1.5"/>
+    <path d="m291 216 2 14" stroke="#e76b39" stroke-width="4" stroke-linecap="round"/>
+    <path d="M220 161h41" stroke="#617781" stroke-width="1"/>
+    <path d="m228 155 5-13h5l-5 13zm8 0 5-13h5l-5 13z" fill="#f0784d"/>
+    <path d="m170 221 9 56m132-56-7 56" stroke="#53707b" stroke-width="2"/>
+  </g>
+</svg>

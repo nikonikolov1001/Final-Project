@@ -1,0 +1,45 @@
+@model CatalogViewModel
+@{
+    ViewData["Title"] = "Каталог";
+}
+
+<h1 class="h2 mb-2">Каталог</h1>
+<p class="text-secondary mb-4">Спортни обувки, облекло и екипировка.</p>
+
+<form asp-action="Index" method="get" class="row g-2 mb-4" role="search">
+    <div class="col-md-8">
+        <label for="catalog-search" class="visually-hidden">Търсене на продукт</label>
+        <input id="catalog-search" class="form-control" type="search" name="search"
+               value="@Model.Search" placeholder="Търси по име на продукт…" maxlength="100" />
+    </div>
+    <div class="col-auto">
+        <button class="btn btn-dark" type="submit">Търси</button>
+    </div>
+    @if (!string.IsNullOrWhiteSpace(Model.Search))
+    {
+        <div class="col-auto">
+            <a class="btn btn-outline-secondary" asp-action="Index">Изчисти</a>
+        </div>
+    }
+</form>
+
+<p class="small text-secondary">Намерени продукти: @Model.Products.Count</p>
+
+@if (Model.Products.Count > 0)
+{
+    <div class="row g-4">
+        @foreach (var product in Model.Products)
+        {
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <partial name="_ProductCard" model="product" />
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="alert alert-light border py-4">
+        <h2 class="h5">Няма намерени продукти</h2>
+        <p class="mb-0">Опитай с друга дума или изчисти търсенето.</p>
+    </div>
+}

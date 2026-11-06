@@ -1,0 +1,14 @@
+@model ErrorViewModel
+@{
+    ViewData["Title"] = "Възникна грешка";
+}
+
+<section class="text-center py-5">
+    <h1 class="h2">Възникна грешка</h1>
+    <p class="text-secondary">Заявката не можа да бъде обработена. Опитай отново след малко.</p>
+    @if (Model.ShowRequestId)
+    {
+        <p class="small">Номер на заявката: <code>@Model.RequestId</code></p>
+    }
+    <a class="btn btn-dark" asp-controller="Home" asp-action="Index">Към началната страница</a>
+</section>

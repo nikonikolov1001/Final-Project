@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 480 360">
+  <defs><linearGradient id="mat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a1ae88"/><stop offset="1" stop-color="#697b58"/></linearGradient><pattern id="matRibs" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M0 1h5" stroke="#d9e2c5" stroke-width=".4" opacity=".6"/></pattern></defs>
+  <ellipse cx="247" cy="301" rx="146" ry="13" fill="#23372d1c"/>
+  <g transform="rotate(-14 240 190)">
+    <path d="m127 133 215-20 58 146-218 29z" fill="#536847"/>
+    <path d="m128 126 213-20 54 147-214 27z" fill="url(#mat)"/>
+    <path d="m128 126 213-20 54 147-214 27z" fill="url(#matRibs)"/>
+    <path d="m144 144 184-19 44 113-183 23z" fill="none" stroke="#cad5b3" stroke-width="1" opacity=".6"/>
+    <path d="m126 126 216-20c-6-25-31-41-56-34L97 93z" fill="#8d9e77"/>
+    <ellipse cx="123" cy="121" rx="43" ry="38" fill="#788e63" transform="rotate(10 123 121)"/>
+    <ellipse cx="123" cy="121" rx="29" ry="25" fill="#b3bf98"/>
+    <ellipse cx="123" cy="121" rx="18" ry="15" fill="#6a7f56"/>
+    <ellipse cx="124" cy="121" rx="9" ry="7" fill="#c8d0b2"/>
+    <path d="m260 80 20 1 15 38-20 2z" fill="#263d32"/>
+    <path d="m282 83 24 63" fill="none" stroke="#e26332" stroke-width="3"/>
+    <path d="m301 222 24-3" stroke="#e1e6d4" stroke-width="3"/>
+  </g>
+</svg>
