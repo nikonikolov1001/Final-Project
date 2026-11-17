@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] — SPORTLINE</title>
+    <link rel="icon" href="~/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <a class="visually-hidden-focusable" href="#main-content">Към съдържанието</a>
+
+    <header class="border-bottom bg-white">
+        <nav class="container navbar py-3" aria-label="Основна навигация">
+            <a class="navbar-brand fw-bold" asp-controller="Home" asp-action="Index">
+                SPORT<span class="brand-accent">LINE.</span>
+            </a>
+            <div class="d-flex gap-4">
+                <a asp-controller="Home" asp-action="Index">Начало</a>
+                <a asp-controller="Catalog" asp-action="Index">Каталог</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" class="container py-4" tabindex="-1">
+        @RenderBody()
+    </main>
+
+    <footer class="border-top bg-white mt-5">
+        <div class="container d-flex flex-wrap justify-content-between gap-2 py-4 small text-secondary">
+            <span>SPORTLINE · Дипломен проект</span>
+            <a href="https://github.com/nikonikolov1001/Final-Project">GitHub хранилище</a>
+        </div>
+    </footer>
+</body>
+</html>
