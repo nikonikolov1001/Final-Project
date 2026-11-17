@@ -47,7 +47,7 @@
 
 ## 3 Предварително проучване
 
-Разгледани са публични страници на Decathlon България, SPORT DEPOT и Sport Vision България на 6 ноември 2026 г. Проучването обхваща организацията на каталога, филтрите и представянето на вариантите. Не са създавани профили и не са извършвани покупки.
+Разгледани са публични страници на Decathlon България, SPORT DEPOT и Sport Vision България на 6 ноември 2026 г. Проучването обхваща организацията на каталога, филтрите и представянето на вариантите.
 
 | Магазин | Наблюдавани възможности | Решение за проекта |
 | --- | --- | --- |
@@ -61,9 +61,9 @@
 
 ## 4 Технологии и начална база
 
-Избрани са C# и ASP.NET Core MVC на .NET 10, Razor Views, Bootstrap, Entity Framework Core Code First и SQL Server. MVC организира страниците и заявките в едно приложение [4]. EF Core поддържа модела и промените по схемата чрез миграции [5]. Разработването се извършва с Visual Studio 2026.
+Избрани са C# и ASP.NET Core MVC на .NET 10, Razor Views, Bootstrap, Entity Framework Core Code First и SQL Server. MVC организира страниците и заявките в едно приложение. EF Core поддържа модела и промените по схемата чрез миграции. Разработването се извършва с Visual Studio 2026.
 
-Решението има четири проекта по подхода във FootballLeagueManagement [6]. SportStore.Core съдържа Models, Dtos, интерфейсите в Services и примерните данни в Data. SportStore.Infrastructure съдържа контекста, миграциите и реализациите на услугите. SportStore.Web съдържа MVC контролерите, изгледите и wwwroot. SportStore.Tests проверява основното поведение на каталога. Core е независим; Infrastructure използва Core; Web използва Core и Infrastructure. Контролерът извиква интерфейс от Core, реализацията работи с EF Core и SQL Server, а Razor показва резултата.
+Решението има четири проекта по подхода във FootballLeagueManagement [4]. SportStore.Core съдържа Models, Dtos, интерфейсите в Services и примерните данни в Data. SportStore.Infrastructure съдържа контекста, миграциите и реализациите на услугите. SportStore.Web съдържа MVC контролерите, изгледите и wwwroot. SportStore.Tests проверява основното поведение на каталога. Core е независим; Infrastructure използва Core; Web използва Core и Infrastructure. Контролерът извиква интерфейс от Core, реализацията работи с EF Core и SQL Server, а Razor показва резултата.
 
 | Обект | Данни и предназначение |
 | --- | --- |
@@ -101,12 +101,7 @@ erDiagram
 
 ## 6 Източници
 
-Източници 1–5 са прегледани на 6 ноември, а източник 6 на 17 ноември 2026 г. Графикът и изискванията са от предоставеното задание.
-
 1. Decathlon България — мъжки обувки за бягане: https://www.decathlon.bg/11640-mazhki-obuvki-za-byagane
 2. SPORT DEPOT — мъжки обувки: https://www.sportdepot.bg/muje-obuvki
 3. Sport Vision — продуктова страница: https://www.sportvision.bg/maratonki/411704-adidas-response-runner-2
-4. Microsoft Learn — ASP.NET Core MVC: https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-10.0
-5. Microsoft Learn — EF Core migrations: https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/
-
-6. FootballLeagueManagement — пример за организацията на решението: https://github.com/nikonikolov1001/FootballLeagueManagement
+4. FootballLeagueManagement — пример за организацията на решението: https://github.com/nikonikolov1001/FootballLeagueManagement
